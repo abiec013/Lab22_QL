@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to GC Coffee!!!</h1>
+    <p> Please Register with us</p>
+    <p><a href="/Home/UserRegistration"> Click Here</a></p>
+</div>
+
+
+<table class="table table-bordered">
+    
+    <tr>
+        <th>
+            Type of Coffee
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Price
+        </th>
+
+    </tr>
+    @foreach (var Element in ViewBag.Emplist)
+    {
+        <tr>
+            <td>
+                @Element.CoffeName
+            </td>
+
+            <td>
+                @Element.Description
+            </td>
+            <td>
+                @Element.Description
+            </td>
+        </tr>
+
+    }
+    </table>

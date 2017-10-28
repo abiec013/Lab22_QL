@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "UserRegistration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>UserRegistration</h2>
+@model LAB22QL.Models.Coffeelist
+
+<form action="/Home/SavedUserInfo" method="post">
+    First Name: <input type="text" name="FirstName" /><br/>
+    Last Name: <input type="text" name="LastName" /><br/>
+    Phone Number: <input type="text" name="PhoneNumber" /><br/>
+    <input type="submit" value="Save" />
+
+
+</form>
